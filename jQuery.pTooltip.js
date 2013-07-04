@@ -38,7 +38,7 @@
 		 * the jQuery object t. (Default: title attribute to each
 		 * object contains the ID to the tool tip element.)
 		 */
-		return $( '#' + t.attr('title') );
+		return $(t).siblings('.tooltip-content');
 	    },
 
 	    tipPosition: function(t) {
